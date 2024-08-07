@@ -19,10 +19,10 @@ def generate_qr_code(url, filename):
 #create a streamlit app 
 st.set_page_config(page_title="QR Code Generator", page_icon="🌐", layout="centered")
 st.image("images/supports.JPG", use_column_width=True)
-st.title("QR Code Generator")
-url = st.text_input("Enter the URL")
+st.title("Generador de Codigo Qr")
+url = st.text_input("Ingrese su URL")
 
-if st.button("Generate QR Code"):
+if st.button("Generar QR Code"):
     generate_qr_code(url, filename)
     st.image(filename, use_column_width=True)
     with open(filename, "rb") as f:
