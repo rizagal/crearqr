@@ -2,3 +2,5 @@ streamlit
 qrcode
 pyshorteners
 requests
+streamlit_option_menu
+st_paywall
