@@ -21,7 +21,7 @@ def generate_qr_code(url, filename):
     img.save(filename)
 
 
-st.sidebar.image("SIGES17.png",caption="")
+st.sidebar.image("idebien.png",caption="")
 
 with st.sidebar:
 
