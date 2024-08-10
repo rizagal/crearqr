@@ -2,5 +2,5 @@ streamlit
 qrcode
 pyshorteners
 requests
-streamlit_option_menu
+streamlit-option-menu==0.3.12
 st_paywall
