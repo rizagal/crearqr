@@ -34,6 +34,7 @@ with st.sidebar:
     ) 
     st.success("Bienvenido")
     st.write(st.session_state.email)
+    st.write(st.session_state.user_subscribed)
     selected = option_menu('Aplicativos Web con Sus respectivas explicacion y Codigo',
                            ['Codigo QR en Paython',
                             'Nueva Opcion', 
