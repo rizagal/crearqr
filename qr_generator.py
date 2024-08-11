@@ -28,7 +28,7 @@ with st.sidebar:
     st.warning("debes estar subscrito")
     add_auth(
     required=True,
-    login_button_text="Iniciar con Google",
+    login_button_text="Iniciar con Google..",
     login_button_color="#FD504D",
     login_sidebar=True,
     ) 
