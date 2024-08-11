@@ -1,7 +1,6 @@
 import qrcode
 import streamlit as st
 from streamlit_option_menu import option_menu
-from st_paywall import add_auth
 
 filename = "qr_codes/qr_code.png"
 
