@@ -3,4 +3,4 @@ qrcode
 pyshorteners
 requests
 streamlit-option-menu==0.3.12
-st_paywall
+st-paywall
