@@ -23,18 +23,18 @@ def generate_qr_code(url, filename):
 
 st.sidebar.image("ideabien.PNG",caption="")
 
-with st.sidebar:
-    if(st.session_state.user_subscribed == True):
-       pass
-    else:
-        st.warning("debes estar subscrito")       
+with st.sidebar:  
     
     add_auth(
     required=True,
     login_button_text="Iniciar con Google",
     login_button_color="#FD504D",
     login_sidebar=True,
-    ) 
+    )
+    if(st.session_state.user_subscribed == True):
+       pass
+    else:
+        st.warning("debes estar subscrito")   
     st.success("Bienvenido")
     st.write(st.session_state.email)
     st.write(st.session_state.user_subscribed)
