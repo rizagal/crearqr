@@ -26,7 +26,7 @@ st.sidebar.image("ideabien.png",caption="")
 with st.sidebar:
 
     st.warning("debes estar subscrito")
-    add_auth(required=True)  
+    
     st.success("Bienvenido")    
     selected = option_menu('Aplicativos Web con Sus respectivas explicacion y Codigo',
                            ['Codigo QR en Paython',
