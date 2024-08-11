@@ -32,7 +32,8 @@ with st.sidebar:
     login_button_color="#FD504D",
     login_sidebar=True,
     ) 
-    st.success("Bienvenido")    
+    st.success("Bienvenido")
+    st.write(st.session_state.email)
     selected = option_menu('Aplicativos Web con Sus respectivas explicacion y Codigo',
                            ['Codigo QR en Paython',
                             'Nueva Opcion', 
