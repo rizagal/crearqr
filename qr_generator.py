@@ -24,7 +24,7 @@ def generate_qr_code(url, filename):
 st.sidebar.image("ideabien.PNG",caption="")
 
 with st.sidebar:  
-    if 'key' not in st.session_state.user_subscribed:
+    if (session_state.user_subscribed == True):
         st.warning("debes estar subscrito") 
     add_auth(
     required=True,
