@@ -30,11 +30,7 @@ with st.sidebar:
     login_button_text="Iniciar con Google",
     login_button_color="#FD504D",
     login_sidebar=True,
-    )
-    if(st.session_state.user_subscribed == True):
-       pass
-    else:
-           
+    )  
     st.success("Bienvenido")
     st.write(st.session_state.email)
     st.write(st.session_state.user_subscribed)
