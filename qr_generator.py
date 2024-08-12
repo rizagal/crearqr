@@ -24,7 +24,7 @@ def generate_qr_code(url, filename):
 st.sidebar.image("ideabien_transparente.png",caption="")
 
 with st.sidebar: 
-    st.warning("debes estar subscrito")
+    #st.warning("debes estar subscrito")
     add_auth(
     required=True,
     login_button_text="Iniciar con Google",
