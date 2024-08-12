@@ -21,7 +21,7 @@ def generate_qr_code(url, filename):
     img.save(filename)
 
 
-st.sidebar.image("ideabien.PNG",caption="")
+st.sidebar.image("ideabien_transparente.PNG",caption="")
 
 with st.sidebar: 
     st.warning("debes estar subscrito")
@@ -31,9 +31,8 @@ with st.sidebar:
     login_button_color="#FD504D",
     login_sidebar=True,
     )  
-    st.success("Bienvenido")
-    st.write(st.session_state.email)
-    st.write(st.session_state.user_subscribed)
+    st.success("Bienvenido: " + st.session_state.email)   
+    # st.write(st.session_state.user_subscribed)
     selected = option_menu('Aplicativos Web con Sus respectivas explicacion y Codigo',
                            ['Codigo QR en Paython',
                             'Nueva Opcion', 
@@ -54,3 +53,7 @@ if(selected == 'Codigo QR en Paython'):
         with open(filename, "rb") as f:
                         image_data = f.read()  
         download = st.download_button(label="Download QR", data=image_data, file_name="qr_generated.png")
+
+    st.markdown("""---""")
+    with open(f'contenido_qr.md', 'r') as f:
+        st.markdown(f.read())
