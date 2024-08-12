@@ -21,7 +21,7 @@ def generate_qr_code(url, filename):
     img.save(filename)
 
 
-st.sidebar.image("ideabien_transparente.PNG",caption="")
+st.sidebar.image("ideabien_transparente.png",caption="")
 
 with st.sidebar: 
     st.warning("debes estar subscrito")
